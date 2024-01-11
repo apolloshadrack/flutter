@@ -32,9 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     fit: BoxFit.contain),
                 ),
                       
-                       Padding(
-                         padding: const EdgeInsets.all(8.0),
-                         child: const Text(
+                       const Padding(
+                         padding: EdgeInsets.all(8.0),
+                         child: Text(
                                     "Discover your\n Dream Job Here", 
                                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.red,), textAlign: TextAlign.center,
                                   ),
@@ -42,9 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
              
 
 
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: const   Text(
+              const Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(
                     "Start your career here today and become a flutter professional in the next three months", 
                     style: TextStyle(fontSize: 16, color: Colors.black), textAlign: TextAlign.center,
                     ),
@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ElevatedButton(onPressed: () {}, 
                         child: Container(
                           child: 
-                          Text(
+                          const Text(
                             "Login", 
                             style: TextStyle(fontSize: 16, color: Colors.red),
                             ),
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ElevatedButton(onPressed: () {}, 
                         child: Container(
                           child: 
-                          Text(
+                          const Text(
                             "Register", 
                             style: TextStyle(fontSize: 16, color: Colors.red),
                             ),
