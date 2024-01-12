@@ -36,45 +36,59 @@ class _MyHomePageState extends State<MyHomePage> {
                          padding: EdgeInsets.all(8.0),
                          child: Text(
                                     "Discover your\n Dream Job Here", 
-                                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.red,), textAlign: TextAlign.center,
+                                  style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, decoration: TextDecoration.none, color: Colors.red,), textAlign: TextAlign.center,
                                   ),
                        ),
              
 
 
               const Padding(
-                padding: EdgeInsets.all(16.0),
+                padding: EdgeInsets.all(32.0),
                 child: Text(
                     "Start your career here today and become a flutter professional in the next three months", 
-                    style: TextStyle(fontSize: 16, color: Colors.black), textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.normal, decoration: TextDecoration.none, color: Colors.black), textAlign: TextAlign.center,
                     ),
               ),
                       
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                    margin: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        ElevatedButton(onPressed: () {}, 
-                        child: Container(
-                          child: 
-                          const Text(
-                            "Login", 
-                            style: TextStyle(fontSize: 16, color: Colors.red),
-                            ),
-                        )
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.red,         
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              ),
+                          onPressed: () {}, 
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                         child:  Text(
+                          "Login", 
+                          style: TextStyle(fontSize: 16, color: Colors.white),
+                          ),
+                        ),
                         ),
                             
-                        ElevatedButton(onPressed: () {}, 
-                        child: Container(
-                          child: 
-                          const Text(
-                            "Register", 
-                            style: TextStyle(fontSize: 16, color: Colors.red),
-                            ),
-                        )
-                        )
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            elevation: 0.0,
+                            shadowColor: Colors.white,
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(0.0) )
+                          ),
+                          onPressed: () {}, 
+                          child: const Padding(
+                            padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                        child:  Text(
+                          "Register", 
+                          style: TextStyle(fontSize: 16, color: Colors.black),
+                        ),
+                          ),
+                        ),
                       ],
                       ),
                   )
