@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:signup_test/welcome_home_page.dart';
+import 'package:signup_test/onboarding_one.dart';
+
 
 
 class MyApp extends StatelessWidget {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const WelcomeHomePage(),
+      home: const OnboardingOnePage(),
     );
   }
 }
